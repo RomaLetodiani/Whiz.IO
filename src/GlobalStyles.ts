@@ -100,7 +100,7 @@ const GlobalStyle = createGlobalStyle`
     
 
     html {
-    font-family: 'mkhedruliRegular', sans-serif; /* Apply the custom font as a fallback */
+    font-family: 'mkhedruliRegular', sans-serif; /* Apply the custom font as a fallback */ 
   }
 `
 

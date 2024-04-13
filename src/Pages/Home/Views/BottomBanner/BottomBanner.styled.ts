@@ -1,0 +1,70 @@
+import styled from "styled-components"
+
+export const BottomBannerStyles = styled.div`
+  position: relative;
+  overflow: hidden;
+  .blurBg {
+    background-image: url("/src/Assets/Images/Home/hero-gradient.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    > div {
+      flex: 1;
+    }
+
+    .textDiv {
+      margin: clamp(50px, 8vw, 80px) clamp(30px, 5vw, 50px);
+      max-width: 584px;
+      > h2 {
+        font-size: clamp(22px, 3vw, 32px);
+        line-height: 48px;
+        font-family: "mtavruliBlack";
+        font-feature-settings: "case" on;
+        margin-bottom: 20px;
+        @media (max-width: 768px) {
+          line-height: 34px;
+        }
+        span {
+          color: #8c65f0;
+        }
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li {
+          max-width: 400px;
+          line-height: 34px;
+          color: #261d44;
+          span {
+            font-family: "mtavruliBold";
+          }
+        }
+      }
+    }
+    .imgDiv {
+      display: flex;
+      max-width: 500px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+`
