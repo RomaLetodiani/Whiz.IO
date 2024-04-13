@@ -99,9 +99,13 @@ const GlobalStyle = createGlobalStyle`
     ${mtavruliFontFaces}
     
 
-    html {
-    font-family: 'mkhedruliRegular', sans-serif; /* Apply the custom font as a fallback */ 
-  }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'mkhedruliRegular', sans-serif; /* Apply the custom font as a fallback */ 
+    }
+
 `
 
 export default GlobalStyle
