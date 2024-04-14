@@ -1,4 +1,4 @@
-module.exports ={
+{
   "printWidth": 80,
   "bracketSpacing": true,
   "tabWidth": 2,
@@ -7,7 +7,6 @@ module.exports ={
   "trailingComma": "all",
   "quoteProps": "consistent",
   "jsxSingleQuote": false,
-
   "arrowParens": "always",
   "semi": false,
   "endOfLine": "auto",
