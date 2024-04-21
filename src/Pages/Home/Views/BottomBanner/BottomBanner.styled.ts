@@ -33,8 +33,6 @@ export const BottomBannerStyles = styled.div`
       > h2 {
         font-size: clamp(22px, 3vw, 32px);
         line-height: 48px;
-        font-family: "mtavruliBlack";
-        font-feature-settings: "case" on;
         margin-bottom: 20px;
         @media (max-width: 768px) {
           line-height: 34px;

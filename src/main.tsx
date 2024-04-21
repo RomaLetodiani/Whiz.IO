@@ -6,6 +6,6 @@ import GlobalStyle from "./GlobalStyles"
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <>
     <GlobalStyle />
-    <RouterProvider router={router} />,
+    <RouterProvider router={router} />
   </>,
 )

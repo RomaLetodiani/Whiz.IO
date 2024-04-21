@@ -2,7 +2,7 @@
 import check from "../../Assets/Icons/check.svg"
 
 // HeaderIcons
-import dropDown from "../../Assets/Icons/Icons.svg"
+import dropDown from "../../Assets/Icons/dropDown.svg"
 import gmail from "../../Assets/Icons/mail.svg"
 import phone from "../../Assets/Icons/phone.svg"
 

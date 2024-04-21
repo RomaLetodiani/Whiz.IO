@@ -6,11 +6,13 @@ export const HeroStyles = styled.div`
   align-items: center;
   gap: 20px;
   padding: 80px 20px;
+  padding-top: 130px;
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    padding: 50px 20px;
+    padding: 30px 20px;
+    padding-top: 100px;
   }
 
   > div {
@@ -21,8 +23,6 @@ export const HeroStyles = styled.div`
     h1 {
       font-size: clamp(40px, 5vw, 48px);
       line-height: 65px;
-      font-family: "mtavruliBlack";
-      font-feature-settings: "case" on;
       color: #261d44;
       max-width: 400px;
 

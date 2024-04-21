@@ -106,6 +106,16 @@ const GlobalStyle = createGlobalStyle`
       font-family: 'mkhedruliRegular', sans-serif; /* Apply the custom font as a fallback */ 
     }
 
+    h1, h2 {
+      font-family: "mtavruliBlack", sans-serif;
+      font-feature-settings: "case" on;
+
+      span {
+        font-family: "mtavruliBlack", sans-serif;
+      font-feature-settings: "case" on;
+      }
+    }
+
 `
 
 export default GlobalStyle

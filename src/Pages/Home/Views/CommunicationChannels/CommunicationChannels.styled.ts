@@ -2,7 +2,6 @@ import styled, { keyframes } from "styled-components"
 
 const CommunicationChannelsStyles = styled.div`
   > h2 {
-    font-family: "mtavruliBlack";
     text-align: center;
     margin-bottom: 20px;
     font-size: clamp(24px, 2vw, 32px);
@@ -87,7 +86,7 @@ const CommunicationChannelsStyles = styled.div`
 
       @media (max-width: 768px) {
         top: clamp(320px, 70vw, 500px);
-        width: 95vw;
+        width: clamp(300px, 95vw, 700px);
       }
 
       span {
