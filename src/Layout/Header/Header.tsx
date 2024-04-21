@@ -8,7 +8,7 @@ import Navbar from "./Navbar/Navbar"
 
 const Header = () => {
   const { y } = useScrollPosition()
-  const isTablet = useMediaQuery("(max-width: 1080px)")
+  const isTablet = useMediaQuery("(max-width: 900px)")
   return (
     <HeaderWrapperStyles $full={y > 50 || isTablet}>
       <SectionWrapper>

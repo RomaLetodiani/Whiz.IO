@@ -7,7 +7,7 @@ export const NavbarStyles = styled.nav`
     li {
       list-style: none;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: clamp(12px, 1.5vw, 16px);
       color: #000;
       cursor: pointer;
       display: flex;

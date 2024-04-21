@@ -4,7 +4,7 @@ import styled from "styled-components"
 interface PopoverProps {
   children: React.ReactNode
   content: React.ReactNode
-  position:
+  position?:
     | "top"
     | "bottom"
     | "left"
@@ -15,7 +15,7 @@ interface PopoverProps {
     | "top-right"
 }
 
-const PopoverContainer = styled.div<{ $position: string }>`
+const PopoverContainer = styled.div`
   position: relative;
 
   &:hover .popover {
@@ -24,7 +24,8 @@ const PopoverContainer = styled.div<{ $position: string }>`
   }
 `
 
-const PopoverContent = styled.div<{ $position: string }>`
+const PopoverContent = styled.div<{ $position?: string }>`
+  display: ${({ $position }) => !$position && "none"};
   position: absolute;
   z-index: 1;
   background-color: #fff;
@@ -91,7 +92,7 @@ const PopoverContent = styled.div<{ $position: string }>`
 
 const Popover: React.FC<PopoverProps> = ({ children, content, position }) => {
   return (
-    <PopoverContainer $position={position}>
+    <PopoverContainer>
       {children}
       {
         <PopoverContent className="popover" $position={position}>

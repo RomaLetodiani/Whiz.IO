@@ -7,6 +7,7 @@ import { NavbarStyles } from "./Navbar.styled"
 const Navbar = () => {
   const { y } = useScrollPosition()
   const isDesktop = useMediaQuery("(min-width: 1200px)")
+  const full = isDesktop && y > 50
 
   return (
     <NavbarStyles>
@@ -31,20 +32,25 @@ const Navbar = () => {
         <li className="gmail-phone">
           <span>
             <Popover
-              position={isDesktop ? "bottom" : "bottom-right"}
+              position={
+                full ? undefined : isDesktop ? "bottom" : "bottom-right"
+              }
               content={<p>info@whizio.ge</p>}
             >
               <img src={gmail} alt="Mail Icon" />
             </Popover>
 
-            {isDesktop && y > 50 && <p>info@whizio.ge</p>}
+            {full && <p>info@whizio.ge</p>}
           </span>
           <span>
-            <Popover position="bottom-right" content={<p>0 322 500 503</p>}>
+            <Popover
+              position={full ? undefined : "bottom-right"}
+              content={<p>0 322 500 503</p>}
+            >
               <img src={phone} alt="Phone Icon" />
             </Popover>
 
-            {isDesktop && y > 50 && <p>0 322 500 503</p>}
+            {full && <p>0 322 500 503</p>}
           </span>
         </li>
       </ul>

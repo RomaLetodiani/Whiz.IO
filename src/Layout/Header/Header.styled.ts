@@ -12,7 +12,7 @@ const HeaderStyles = styled.header`
 
 const Logo = styled.div`
   img {
-    width: 170px;
+    width: clamp(130px, 10vw, 170px);
   }
 `
 
