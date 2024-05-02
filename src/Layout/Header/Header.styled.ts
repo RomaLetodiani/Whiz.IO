@@ -10,12 +10,6 @@ const HeaderStyles = styled.header`
   }
 `
 
-const Logo = styled.div`
-  img {
-    width: clamp(130px, 10vw, 170px);
-  }
-`
-
 const HeaderWrapperStyles = styled.div<{ $full: boolean }>`
   position: fixed;
   z-index: 1000;
@@ -24,7 +18,8 @@ const HeaderWrapperStyles = styled.div<{ $full: boolean }>`
   transition: all 0.3s ease-in-out;
   width: ${({ $full }) => ($full ? "100%" : "90%")};
   border-radius: ${({ $full }) => ($full ? "0" : "24px")};
-  border: 1px solid #e5e7eb;
+  border: ${({ $full }) => ($full ? "0px solid #e5e5e5" : "1px solid #e5e5e5")};
+  border-bottom: 1px solid #e5e5e5;
   background-image: url("/src/Assets/Images/Home/hero-gradient.png");
   background-color: #fff;
   background-size: cover;
@@ -32,4 +27,4 @@ const HeaderWrapperStyles = styled.div<{ $full: boolean }>`
   background-repeat: no-repeat;
 `
 
-export { HeaderStyles, HeaderWrapperStyles, Logo }
+export { HeaderStyles, HeaderWrapperStyles }

@@ -1,23 +1,28 @@
-import logo from "../../Assets/Images/WHIZIO.svg"
-
+import { useState } from "react"
+import Burger from "../../Components/Burger/Burger"
 import SectionWrapper from "../../Components/SectionWrapper/SectionWrapper"
+import Logo from "../../Components/Shared/Logo"
 import useMediaQuery from "../../Hooks/useMediaQuery"
 import useScrollPosition from "../../Hooks/useScrollPosition"
-import { HeaderStyles, HeaderWrapperStyles, Logo } from "./Header.styled"
+import { HeaderStyles, HeaderWrapperStyles } from "./Header.styled"
 import Navbar from "./Navbar/Navbar"
 
 const Header = () => {
   const { y } = useScrollPosition()
-  const isTablet = useMediaQuery("(max-width: 900px)")
+  const isTablet = useMediaQuery("(max-width: 1000px)")
+  const [open, setOpen] = useState(false)
   return (
     <HeaderWrapperStyles $full={y > 50 || isTablet}>
       <SectionWrapper>
         <HeaderStyles>
-          <Logo>
-            <img src={logo} alt="Whiz.io Logo" />
-          </Logo>
+          <Logo />
           {!isTablet && <Navbar />}
-          {isTablet && <button>burger</button>}
+          {isTablet && (
+            <Burger
+              open={open}
+              onBurgerClick={() => setOpen((prev) => !prev)}
+            />
+          )}
         </HeaderStyles>
       </SectionWrapper>
     </HeaderWrapperStyles>

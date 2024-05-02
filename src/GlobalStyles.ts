@@ -115,6 +115,31 @@ const GlobalStyle = createGlobalStyle`
       font-feature-settings: "case" on;
       }
     }
+    
+  /* Set styles for the scrollbar track */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #e5e5e5;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #999; 
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  /* Firefox scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #888 #e5e5e5;
+  
+  /* Firefox scrollbar track */
+  scrollbar-track-color: #e5e5e5;
 
 `
 
