@@ -6,6 +6,7 @@ import useMediaQuery from "../../Hooks/useMediaQuery"
 import useScrollPosition from "../../Hooks/useScrollPosition"
 import { HeaderStyles, HeaderWrapperStyles } from "./Header.styled"
 import Navbar from "./Navbar/Navbar"
+import MobileMenu from "./Navbar/Mobile/MobileMenu"
 
 const Header = () => {
   const { y } = useScrollPosition()
@@ -18,10 +19,13 @@ const Header = () => {
           <Logo />
           {!isTablet && <Navbar />}
           {isTablet && (
-            <Burger
-              open={open}
-              onBurgerClick={() => setOpen((prev) => !prev)}
-            />
+            <>
+              <Burger
+                open={open}
+                onBurgerClick={() => setOpen((prev) => !prev)}
+              />
+              <MobileMenu open={open} />
+            </>
           )}
         </HeaderStyles>
       </SectionWrapper>
