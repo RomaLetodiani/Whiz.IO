@@ -13,23 +13,46 @@ const Header = () => {
   const isTablet = useMediaQuery("(max-width: 1000px)")
   const [open, setOpen] = useState(false)
   return (
-    <HeaderWrapperStyles $full={y > 50 || isTablet}>
-      <SectionWrapper>
-        <HeaderStyles>
-          <Logo />
-          {!isTablet && <Navbar />}
-          {isTablet && (
-            <>
-              <Burger
-                open={open}
-                onBurgerClick={() => setOpen((prev) => !prev)}
-              />
-              <MobileMenu open={open} />
-            </>
-          )}
-        </HeaderStyles>
-      </SectionWrapper>
-    </HeaderWrapperStyles>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
+      <HeaderWrapperStyles $full={y > 50 || isTablet}>
+        <SectionWrapper>
+          <HeaderStyles>
+            <Logo />
+            {!isTablet && <Navbar />}
+            {isTablet && (
+              <>
+                <Burger
+                  open={open}
+                  onBurgerClick={() => setOpen((prev) => !prev)}
+                />
+                <MobileMenu open={open} />
+              </>
+            )}
+          </HeaderStyles>
+        </SectionWrapper>
+      </HeaderWrapperStyles>
+
+      <p
+        style={{
+          justifySelf: "center",
+          alignSelf: "center",
+          padding: "1rem",
+          color: "red",
+          border: "1px solid red",
+          borderRadius: "10px",
+          textAlign: "center",
+          top: "15%",
+          position: "absolute",
+        }}
+      >
+        Site is Under Construction
+      </p>
+    </div>
   )
 }
 

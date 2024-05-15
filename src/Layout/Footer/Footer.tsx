@@ -24,13 +24,13 @@ const Footer = () => {
             <h4>Get The App</h4>
 
             <ul>
-              <li>
+              {/* <li>
                 <img src={gmail} alt="Mail Icon" />
-                <h5>info@whizio.ge</h5>
-              </li>
+                <h5>info@</h5>
+              </li> */}
               <li>
                 <img src={phone} alt="Phone Icon" />
-                <h5>0 322 500 503</h5>
+                <h5>+995 322 551 441</h5>
               </li>
             </ul>
           </div>
@@ -38,7 +38,7 @@ const Footer = () => {
         <FooterBottom>
           <span>
             <img src={copyRight} alt="copyRight" />
-            <p>2077 თი.დი.ჯი. WHIZ.IO. All rights reserved.</p>
+            <p>All rights reserved Whiz.io Soft LLC (406318140).</p>
           </span>
           <Socials />
         </FooterBottom>
