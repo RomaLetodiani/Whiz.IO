@@ -1,6 +1,6 @@
 import SectionWrapper from "../../Components/SectionWrapper/SectionWrapper"
 import Logo from "../../Components/Shared/Logo"
-import { copyRight, gmail, phone } from "../../Components/Shared/icons"
+import { copyRight, phone } from "../../Components/Shared/icons"
 import Socials from "../../Components/Socials/Socials"
 import { FooterBottom, FooterStyles, FooterTop } from "./Footer.styled"
 
