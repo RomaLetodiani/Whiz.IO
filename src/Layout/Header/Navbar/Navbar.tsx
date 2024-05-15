@@ -1,5 +1,5 @@
 import Popover from "../../../Components/Popover/Popover"
-import { dropDown, gmail, phone } from "../../../Components/Shared/icons"
+import { dropDown, phone } from "../../../Components/Shared/icons"
 import useMediaQuery from "../../../Hooks/useMediaQuery"
 import useScrollPosition from "../../../Hooks/useScrollPosition"
 import { NavbarStyles } from "./Navbar.styled"
@@ -30,7 +30,7 @@ const Navbar = () => {
           <img src={dropDown} alt="dropDown" />
         </li>
         <li className="gmail-phone">
-          <span>
+          {/* <span>
             <Popover
               position={
                 full ? undefined : isDesktop ? "bottom" : "bottom-right"
@@ -41,16 +41,16 @@ const Navbar = () => {
             </Popover>
 
             {full && <p>info@whizio.ge</p>}
-          </span>
+          </span> */}
           <span>
             <Popover
               position={full ? undefined : "bottom-right"}
-              content={<p>0 322 500 503</p>}
+              content={<p>+995 322 551 441</p>}
             >
               <img src={phone} alt="Phone Icon" />
             </Popover>
 
-            {full && <p>0 322 500 503</p>}
+            {full && <p>+995 322 551 441</p>}
           </span>
         </li>
       </ul>
