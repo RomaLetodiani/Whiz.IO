@@ -1,22 +1,30 @@
+export enum MenuItems {
+  Products = "პროდუქტები",
+  Prices = "ფასები",
+  Services = "სერვისები",
+  AboutUs = "ჩვენს შესახებ",
+  Contact = "კონტაქტი",
+}
+
 export const NavBarTexts = [
   {
     id: 1,
-    text: "პროდუქტები",
+    text: MenuItems.Products,
   },
   {
     id: 3,
-    text: "ფასები",
+    text: MenuItems.Prices,
   },
   {
     id: 4,
-    text: "სერვისები",
+    text: MenuItems.Services,
   },
   {
     id: 5,
-    text: "ჩვენს შესახებ",
+    text: MenuItems.AboutUs,
   },
   {
     id: 6,
-    text: "კონტაქტი",
+    text: MenuItems.Contact,
   },
 ]

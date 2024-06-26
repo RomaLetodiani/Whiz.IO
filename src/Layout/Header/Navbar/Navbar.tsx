@@ -10,7 +10,7 @@ const Navbar = () => {
       <ul>
         {NavBarTexts.map((item) => (
           <NavBarText
-            selectedId={1}
+            selectedId={0}
             setSelected={() => {}}
             key={item.id}
             item={item}
@@ -37,6 +37,10 @@ const Navbar = () => {
 
             <p>+995 322 551 441</p>
           </span>
+        </li>
+
+        <li>
+          <span>ქარ</span>
         </li>
       </ul>
     </NavbarStyles>
