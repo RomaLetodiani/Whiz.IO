@@ -4,7 +4,7 @@ export const BottomBannerStyles = styled.div`
   position: relative;
   overflow: hidden;
   .blurBg {
-    background-image: url("/src/Assets/Images/Home/hero-gradient.png");
+    background-image: url("/src/Assets/Images/Home/heroGradient.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -10,17 +10,16 @@ const HeaderStyles = styled.header`
   }
 `
 
-const HeaderWrapperStyles = styled.div<{ $full: boolean }>`
+const HeaderWrapperStyles = styled.div`
   position: fixed;
   z-index: 1000;
-  top: ${({ $full }) => ($full ? "0" : "20px")};
-  left: ${({ $full }) => ($full ? "0" : "5%")};
+  top: 0;
+  left: 0;
   transition: all 0.3s ease-in-out;
-  width: ${({ $full }) => ($full ? "100%" : "90%")};
-  border-radius: ${({ $full }) => ($full ? "0" : "24px")};
-  border: ${({ $full }) => ($full ? "0px solid #e5e5e5" : "1px solid #e5e5e5")};
+  width: 100%;
+  border: "1px solid #e5e5e5";
   border-bottom: 1px solid #e5e5e5;
-  background-image: url("/src/Assets/Images/Home/hero-gradient.png");
+  background-image: url("/src/Assets/Images/Home/heroGradient.png");
   background-color: #fff;
   background-size: cover;
   background-position: center bottom;
