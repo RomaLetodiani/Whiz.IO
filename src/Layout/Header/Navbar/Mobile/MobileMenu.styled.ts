@@ -6,7 +6,7 @@ export const MobileMenuStyles = styled.div<{ open: boolean }>`
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 0;
+  top: 102px;
   right: 0;
   width: 100%;
   height: 100%;
@@ -14,13 +14,6 @@ export const MobileMenuStyles = styled.div<{ open: boolean }>`
   z-index: 1000;
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   transition: transform 0.5s ease-in-out;
-
-  @media (max-width: 1000px) {
-    top: 98px;
-  }
-  @media (max-width: 768px) {
-    top: 74px;
-  }
 
   ul {
     display: flex;

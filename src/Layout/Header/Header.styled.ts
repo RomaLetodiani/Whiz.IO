@@ -3,6 +3,7 @@ import gradient from "../../Assets/Images/Home/heroGradient.png"
 
 const HeaderStyles = styled.header`
   padding: 32px 20px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
