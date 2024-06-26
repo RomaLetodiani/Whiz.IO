@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import gradient from "../../Assets/Images/Home/heroGradient.png"
 
 const HeaderStyles = styled.header`
   padding: 32px 20px;
@@ -19,7 +20,7 @@ const HeaderWrapperStyles = styled.div`
   width: 100%;
   border: "1px solid #e5e5e5";
   border-bottom: 1px solid #e5e5e5;
-  background-image: url("/src/Assets/Images/Home/heroGradient.png");
+  background-image: url(${gradient});
   background-color: #fff;
   background-size: cover;
   background-position: center bottom;

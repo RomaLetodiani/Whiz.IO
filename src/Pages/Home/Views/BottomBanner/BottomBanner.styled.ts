@@ -1,10 +1,11 @@
 import styled from "styled-components"
+import { heroGradient } from "../../../../Assets/Images/Home"
 
 export const BottomBannerStyles = styled.div`
   position: relative;
   overflow: hidden;
   .blurBg {
-    background-image: url("/src/Assets/Images/Home/heroGradient.png");
+    background-image: url(${heroGradient});
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

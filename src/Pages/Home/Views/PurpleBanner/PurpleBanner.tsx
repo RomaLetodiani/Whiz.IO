@@ -1,7 +1,7 @@
 import SectionWrapper from "../../../../Components/SectionWrapper/SectionWrapper"
 import { PurpleBannerStyles } from "./PurpleBanner.styled"
 import { check } from "../../../../Components/Shared/icons"
-import purpleBannerGuy from "../../../../Assets/Images/Home/PurpleBanner.png"
+import { purpleBanner } from "../../../../Assets/Images/Home"
 
 const PurpleBanner = () => {
   return (
@@ -31,7 +31,7 @@ const PurpleBanner = () => {
           </ul>
         </div>
         <div className="imgDiv">
-          <img src={purpleBannerGuy} alt="Excited Man With Laptop" />
+          <img src={purpleBanner} alt="Excited Man With Laptop" />
         </div>
       </SectionWrapper>
     </PurpleBannerStyles>

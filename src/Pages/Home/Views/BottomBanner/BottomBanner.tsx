@@ -1,6 +1,6 @@
+import { bottomBanner } from "../../../../Assets/Images/Home"
 import SectionWrapper from "../../../../Components/SectionWrapper/SectionWrapper"
 import { BottomBannerStyles } from "./BottomBanner.styled"
-import bottomBanner from "../../../../Assets/Images/Home/BottomBanner.svg"
 
 const BottomBanner = () => {
   return (

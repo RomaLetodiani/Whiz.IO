@@ -1,10 +1,10 @@
-import UalaHero from "../../../../Assets/Images/Home/UalaHero.svg"
 import SectionWrapper from "../../../../Components/SectionWrapper/SectionWrapper"
 
 import Button from "../../../../Components/UI/Button/Button"
 import { HeroStyles } from "./Hero.styled"
 
 import { check } from "../../../../Components/Shared/icons"
+import { UaLaHero } from "../../../../Assets/Images/Home"
 
 const Hero = () => {
   return (
@@ -33,7 +33,7 @@ const Hero = () => {
           </ul>
         </div>
         <div className="HeroImageDiv">
-          <img src={UalaHero} alt="" />
+          <img src={UaLaHero} alt="" />
         </div>
       </HeroStyles>
     </SectionWrapper>

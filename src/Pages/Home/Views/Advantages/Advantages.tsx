@@ -1,6 +1,6 @@
+import { advantages } from "../../../../Assets/Images/Home"
 import SectionWrapper from "../../../../Components/SectionWrapper/SectionWrapper"
 import { AdvantagesStyles } from "./Advantages.styled"
-import advantages from "../../../../Assets/Images/Home/Advantages.svg"
 const Advantages = () => {
   return (
     <SectionWrapper>

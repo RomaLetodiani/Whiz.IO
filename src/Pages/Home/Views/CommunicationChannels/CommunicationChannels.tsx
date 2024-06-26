@@ -1,7 +1,7 @@
 import { CommunicationChannelsStyles } from "./CommunicationChannels.styled"
-import dialog from "../../../../Assets/Images/Home/Dialog.svg"
 import ChannelsCycle from "./ChannelsCycle"
 import SectionWrapper from "../../../../Components/SectionWrapper/SectionWrapper"
+import { dialog } from "../../../../Assets/Images/Home"
 const CommunicationChannels = () => {
   return (
     <SectionWrapper>
