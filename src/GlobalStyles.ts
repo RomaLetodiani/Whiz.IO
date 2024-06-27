@@ -104,7 +104,8 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       padding: 0;
       font-family: 'mkhedruliRegular', sans-serif; /* Apply the custom font as a fallback */ 
-    }
+    color: #261D44;
+  }
 
     h1, h2 {
       font-family: "mtavruliBlack", sans-serif;
@@ -115,6 +116,7 @@ const GlobalStyle = createGlobalStyle`
       font-feature-settings: "case" on;
       }
     }
+
     
   /* Set styles for the scrollbar track */
   ::-webkit-scrollbar {

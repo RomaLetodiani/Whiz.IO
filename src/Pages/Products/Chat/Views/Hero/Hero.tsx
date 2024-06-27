@@ -1,3 +1,5 @@
+import { branding } from "../../../../../Assets/Images/Chat"
+import Blob from "../../../../../Components/Blob/Blob"
 import { HeroStyles } from "./Hero.styled"
 
 const Hero = () => {
@@ -17,7 +19,18 @@ const Hero = () => {
       </div>
       <div>
         <h2>ბრენდინგი</h2>
-        <div></div>
+        <div>
+          <div className="brandingImageDiv">
+            <img src={branding} alt="Branding" />
+          </div>
+          <div className="brandingTexts">
+            <p>
+              მარტივად შეგიძლიათ ჩათ ვიდჯჟეთს მისცეთ თქვენი ბრენდის შესაბამისი
+              ვიზუალი, ატვირთოთ ლოგო, შეცვალოთ ფერი...
+            </p>
+            <Blob fillColor="#F0EEF9" />
+          </div>
+        </div>
       </div>
     </HeroStyles>
   )
