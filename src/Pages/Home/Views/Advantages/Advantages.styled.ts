@@ -1,8 +1,6 @@
 import styled from "styled-components"
 
 export const AdvantagesStyles = styled.div`
-  padding: clamp(50px, 8vw, 80px) clamp(30px, 5vw, 50px);
-
   > h2 {
     text-align: center;
     font-size: clamp(24px, 2vw, 32px);

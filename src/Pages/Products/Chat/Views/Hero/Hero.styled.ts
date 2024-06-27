@@ -1,12 +1,6 @@
 import styled from "styled-components"
 
 export const HeroStyles = styled.div`
-  padding: 50px;
-
-  @media (max-width: 768px) {
-    padding: 0px;
-  }
-
   h1 {
     line-height: 4rem;
     font-size: 3rem;
@@ -63,6 +57,13 @@ export const HeroStyles = styled.div`
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+
+            @media (max-width: 1000px) {
+              svg {
+                width: 100%;
+                height: 100%;
+              }
+            }
 
             @media (max-width: 768px) {
               display: none;

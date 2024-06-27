@@ -3,11 +3,9 @@ import styled from "styled-components"
 export const PurpleBannerStyles = styled.div`
   background: linear-gradient(90deg, #281e47 0%, #8863ed 100%);
   > section {
-    padding-left: clamp(30px, 3vw, 80px);
     display: flex;
     justify-content: space-between;
-    /* gap: 20px; */
-    color: #eaeae9;
+    padding-bottom: 0;
 
     > div {
       flex: 1;
@@ -16,7 +14,6 @@ export const PurpleBannerStyles = styled.div`
     @media (max-width: 768px) {
       flex-direction: column;
       align-items: center;
-      padding: 20px 20px 0;
       gap: 40px;
     }
 
@@ -34,6 +31,7 @@ export const PurpleBannerStyles = styled.div`
         font-family: "mtavruliBlack";
         font-feature-settings: "case" on;
         margin-bottom: 20px;
+        color: #ffffff;
         span {
           color: #8c65f0;
         }
@@ -53,8 +51,10 @@ export const PurpleBannerStyles = styled.div`
           }
           p {
             line-height: 34px;
+            color: #ffffff;
             > span {
               font-family: "mkhedruliBold";
+              color: #8c65f0;
             }
           }
         }

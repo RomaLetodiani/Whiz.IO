@@ -4,7 +4,7 @@ import SectionWrapper from "../../../../Components/SectionWrapper/SectionWrapper
 import { dialog } from "../../../../Assets/Images/Home"
 const CommunicationChannels = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper paddingOn={false}>
       <CommunicationChannelsStyles>
         <h2>
           იყავი <span>ყველგან</span> სადაც შენი მომხმარებელია

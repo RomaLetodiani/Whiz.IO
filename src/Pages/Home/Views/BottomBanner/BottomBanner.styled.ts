@@ -22,6 +22,8 @@ export const BottomBannerStyles = styled.div`
     gap: 20px;
     @media (max-width: 768px) {
       flex-direction: column;
+      padding: 0;
+      margin: 20px 0 0 20px;
     }
 
     > div {
@@ -29,7 +31,6 @@ export const BottomBannerStyles = styled.div`
     }
 
     .textDiv {
-      margin: clamp(50px, 8vw, 80px) clamp(30px, 5vw, 50px);
       max-width: 584px;
       > h2 {
         font-size: clamp(22px, 3vw, 32px);

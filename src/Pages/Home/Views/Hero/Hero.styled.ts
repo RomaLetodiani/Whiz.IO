@@ -5,12 +5,10 @@ export const HeroStyles = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 80px 20px;
 
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    padding: 30px 20px;
   }
 
   > div {

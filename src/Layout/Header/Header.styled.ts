@@ -2,6 +2,8 @@ import styled from "styled-components"
 import gradient from "../../Assets/Images/Home/heroGradient.png"
 
 const HeaderStyles = styled.header`
+  max-width: 1440px;
+  margin-inline: auto;
   padding: 32px 20px;
   height: 100px;
   display: flex;

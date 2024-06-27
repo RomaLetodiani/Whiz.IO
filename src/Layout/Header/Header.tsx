@@ -12,21 +12,19 @@ const Header = () => {
   const [open, setOpen] = useState(false)
   return (
     <HeaderWrapperStyles>
-      <SectionWrapper>
-        <HeaderStyles>
-          <Logo />
-          {!isTablet && <Navbar />}
-          {isTablet && (
-            <>
-              <Burger
-                open={open}
-                onBurgerClick={() => setOpen((prev) => !prev)}
-              />
-              <MobileMenu open={open} />
-            </>
-          )}
-        </HeaderStyles>
-      </SectionWrapper>
+      <HeaderStyles>
+        <Logo />
+        {!isTablet && <Navbar />}
+        {isTablet && (
+          <>
+            <Burger
+              open={open}
+              onBurgerClick={() => setOpen((prev) => !prev)}
+            />
+            <MobileMenu open={open} />
+          </>
+        )}
+      </HeaderStyles>
     </HeaderWrapperStyles>
   )
 }
