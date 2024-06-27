@@ -41,6 +41,7 @@ export const HeroStyles = styled.div`
         justify-content: space-between;
         align-items: center;
         gap: 2rem;
+        padding-block: 2rem;
 
         .brandingImageDiv {
           min-width: 350px;
@@ -76,6 +77,7 @@ export const HeroStyles = styled.div`
 
         @media (max-width: 768px) {
           flex-direction: column;
+          gap: 0;
         }
       }
     }
