@@ -8,7 +8,7 @@ type Props = {
 
 const SectionWrapper = ({ children, paddingOn = true }: Props) => {
   return (
-    <SectionWrapperStyles paddingOn={paddingOn}>
+    <SectionWrapperStyles $paddingOn={paddingOn}>
       {children}
     </SectionWrapperStyles>
   )
