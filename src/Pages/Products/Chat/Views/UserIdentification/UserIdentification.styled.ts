@@ -11,9 +11,10 @@ export const UserIdentificationStyles = styled.div`
     justify-content: center;
     align-items: center;
     gap: 50px;
-
+    padding-block: 50px;
     @media (max-width: 768px) {
       flex-direction: column;
+      padding-block: 0px;
     }
 
     > div {

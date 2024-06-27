@@ -9,7 +9,6 @@ export const HeroStyles = styled.div`
     @media (max-width: 768px) {
       font-size: 2rem;
       line-height: 40px;
-      text-align: start;
     }
   }
 
