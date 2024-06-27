@@ -6,7 +6,7 @@ export const MobileMenuStyles = styled.div<{ open: boolean }>`
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 102px;
+  top: 101px;
   right: 0;
   width: 100%;
   height: 100%;

@@ -15,7 +15,7 @@ export const BottomBannerStyles = styled.div`
     width: 100%;
   }
 
-  > div {
+  > section {
     display: flex;
     justify-content: center;
     align-items: center;

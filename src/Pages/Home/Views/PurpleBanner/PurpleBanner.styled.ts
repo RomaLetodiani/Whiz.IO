@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const PurpleBannerStyles = styled.div`
   background: linear-gradient(90deg, #281e47 0%, #8863ed 100%);
-  > div {
+  > section {
     padding-left: clamp(30px, 3vw, 80px);
     display: flex;
     justify-content: space-between;
