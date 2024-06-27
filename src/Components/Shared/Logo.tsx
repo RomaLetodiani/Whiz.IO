@@ -1,11 +1,14 @@
 import styled from "styled-components"
 import logo from "../../Assets/Images/WHIZIO.svg"
+import { Link } from "react-router-dom"
 
 const Logo = () => {
   return (
-    <LogoStyles>
-      <img src={logo} alt="Whiz.io Logo" />
-    </LogoStyles>
+    <Link to="/">
+      <LogoStyles>
+        <img src={logo} alt="Whiz.io Logo" />
+      </LogoStyles>
+    </Link>
   )
 }
 
