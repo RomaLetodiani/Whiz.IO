@@ -6,7 +6,7 @@ const AdditionalDevelopment = () => {
   return (
     <SectionWrapper>
       <AdditionalDevelopmentStyles>
-        <h2>Additional Development</h2>
+        <h2>დამატებითი დეველოპმენტი</h2>
         <div>
           <div>
             <img

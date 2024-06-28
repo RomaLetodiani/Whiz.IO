@@ -19,6 +19,7 @@ export const AdditionalDevelopmentStyles = styled.div`
       img {
         width: 100%;
         height: 100%;
+        object-fit: contain;
       }
       p {
         max-width: 400px;
