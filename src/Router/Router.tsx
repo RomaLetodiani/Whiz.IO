@@ -16,13 +16,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/products",
-        children: [
-          {
-            path: "chat",
-            element: <ChatPage />,
-          },
-        ],
+        path: "chat",
+        element: <ChatPage />,
       },
     ],
   },
