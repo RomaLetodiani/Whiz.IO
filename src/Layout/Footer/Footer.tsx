@@ -26,10 +26,12 @@ const Footer = () => {
                 <img src={gmail} alt="Mail Icon" />
                 <h5>info@</h5>
               </li> */}
-            <li>
-              <img src={phone} alt="Phone Icon" />
-              <h5>+995 322 551 441</h5>
-            </li>
+            <a href="tel:+995322551441">
+              <li>
+                <img src={phone} alt="Phone Icon" />
+                <h5>+995 322 551 441</h5>
+              </li>
+            </a>
           </ul>
         </div>
       </FooterTop>
