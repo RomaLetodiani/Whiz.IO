@@ -19,6 +19,10 @@ export const UserIdentificationStyles = styled.div`
 
     > div {
       flex: 1;
+      p {
+        max-width: 333px;
+        margin-inline: auto;
+      }
     }
 
     .userIdentificationImageDiv {
