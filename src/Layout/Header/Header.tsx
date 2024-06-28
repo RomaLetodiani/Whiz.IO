@@ -1,6 +1,5 @@
 import { useState } from "react"
 import Burger from "../../Components/Burger/Burger"
-import SectionWrapper from "../../Components/SectionWrapper/SectionWrapper"
 import Logo from "../../Components/Shared/Logo"
 import useMediaQuery from "../../Hooks/useMediaQuery"
 import { HeaderStyles, HeaderWrapperStyles } from "./Header.styled"
