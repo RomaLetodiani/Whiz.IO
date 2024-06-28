@@ -7,15 +7,15 @@ import Loading from "../Pages/Loading/Loading"
 
 const Root = () => {
   return (
-    <RootDiv>
-      <Header />
-      <OutletWrapper>
-        <Suspense fallback={<Loading />}>
+    <Suspense fallback={<Loading />}>
+      <RootDiv>
+        <Header />
+        <OutletWrapper>
           <Outlet />
-        </Suspense>
-      </OutletWrapper>
-      <Footer />
-    </RootDiv>
+        </OutletWrapper>
+        <Footer />
+      </RootDiv>
+    </Suspense>
   )
 }
 

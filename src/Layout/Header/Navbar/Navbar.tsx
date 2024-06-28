@@ -1,6 +1,6 @@
 import Popover from "../../../Components/Popover/Popover"
 import { phone } from "../../../Components/Shared/icons"
-import { NavBarTexts } from "../../../Utils/NavBarTexts"
+import { NavBarTexts } from "./NavBarText/Utils/NavBarTexts"
 import NavBarText from "./NavBarText/NavBarText"
 import { NavbarStyles } from "./Navbar.styled"
 

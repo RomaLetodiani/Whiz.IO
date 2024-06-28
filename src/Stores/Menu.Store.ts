@@ -1,5 +1,5 @@
 import { create } from "zustand"
-import { MenuItems } from "../Utils/NavBarTexts"
+import { MenuItems } from "../Layout/Header/Navbar/NavBarText/Utils/NavBarTexts"
 
 interface muneStoreI {
   selectedMenu: MenuItems | null
