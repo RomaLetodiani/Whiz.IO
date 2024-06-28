@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 const FooterStyles = styled.footer`
   max-width: 1440px;
+  width: 100%;
   margin-inline: auto;
   padding: 20px 40px;
   display: flex;
