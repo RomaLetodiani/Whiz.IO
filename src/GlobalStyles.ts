@@ -117,6 +117,11 @@ const GlobalStyle = createGlobalStyle`
       }
     }
 
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     
   /* Set styles for the scrollbar track */
   ::-webkit-scrollbar {

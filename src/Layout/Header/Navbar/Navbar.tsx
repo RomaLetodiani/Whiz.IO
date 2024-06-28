@@ -31,11 +31,15 @@ const Navbar = () => {
             {full && <p>info@whizio.ge</p>}
           </span> */}
           <span>
-            <Popover position="bottom-right" content={<p>+995 322 551 441</p>}>
-              <img src={phone} alt="Phone Icon" />
+            <Popover position="bottom" content={<p>+995 322 551 441</p>}>
+              <a href="tel:+995322551441">
+                <img src={phone} alt="Phone Icon" />
+              </a>
             </Popover>
 
-            <p>+995 322 551 441</p>
+            <a href="tel:+995322551441">
+              <p>+995 322 551 441</p>
+            </a>
           </span>
         </li>
 
