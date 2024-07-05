@@ -4,7 +4,7 @@ import communicationChannelPattern from "./CommunicationChannelPattern.svg"
 import dialog from "./Dialog.svg"
 import heroGradient from "./heroGradient.png"
 import purpleBanner from "./PurpleBanner.png"
-import UaLaHero from "./UaLaHero.svg"
+import UaLaHero from "./UalaHero.svg"
 
 export {
   advantages,
