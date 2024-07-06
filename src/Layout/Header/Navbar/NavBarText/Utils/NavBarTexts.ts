@@ -1,10 +1,4 @@
-export enum MenuItemsTextEnum {
-  Products = "პროდუქტები",
-  Prices = "ფასები",
-  Services = "სერვისები",
-  AboutUs = "ჩვენს შესახებ",
-  Contact = "კონტაქტი",
-}
+import { MenuItemsTextEnum } from "../../../Menu/Utils/Menu.types"
 
 export interface NavBarTextsI {
   id: number
