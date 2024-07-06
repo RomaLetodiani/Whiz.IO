@@ -1,22 +1,24 @@
 import { dropDown } from "../../../../Components/Shared/icons"
+import { MenuItemsTextEnum } from "../../Menu/Utils/Menu.types"
 import { NavBarTextStyles } from "./NavBarText.styled"
-import { NavBarTextsI } from "./Utils/NavBarTexts"
 
 type NavBarTextProps = {
-  item: NavBarTextsI
-  selectedId: number
-  setSelected: (id: number) => void
+  text: MenuItemsTextEnum
+  hasData: boolean
+  selected: boolean
+  setSelected: () => void
 }
 
-const NavBarText = ({ item, selectedId, setSelected }: NavBarTextProps) => {
+const NavBarText = ({
+  text,
+  hasData,
+  selected,
+  setSelected,
+}: NavBarTextProps) => {
   return (
-    <NavBarTextStyles
-      selected={item.id === selectedId}
-      onClick={() => setSelected(item.id)}
-      key={item.id}
-    >
-      <span>{item.text}</span>
-      <img src={dropDown} alt="dropDown" />
+    <NavBarTextStyles selected={selected} onClick={setSelected}>
+      <span>{text}</span>
+      {hasData && <img src={dropDown} alt="dropDown" />}
     </NavBarTextStyles>
   )
 }

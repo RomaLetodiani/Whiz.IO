@@ -4,7 +4,7 @@ export const NavbarStyles = styled.nav`
   padding-right: 20px;
   ul {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     li {
       list-style: none;
       font-weight: 600;

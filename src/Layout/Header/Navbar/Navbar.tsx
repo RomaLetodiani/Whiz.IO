@@ -1,24 +1,44 @@
 import { phone } from "../../../Components/Shared/icons"
-import { NavBarTexts } from "./NavBarText/Utils/NavBarTexts"
+import { NavBarTexts, NavBarTextsI } from "./NavBarText/Utils/NavBarTexts"
 import NavBarText from "./NavBarText/NavBarText"
 import { NavbarStyles } from "./Navbar.styled"
 import MenuStore from "../../../Stores/Menu.Store"
+import { useEffect } from "react"
+import { MenuItemsTextEnum, MenuItemTitlesEnum } from "../Menu/Utils/Menu.types"
 
 const Navbar = () => {
-  const { selectedMenu, setSelectedMenu } = MenuStore()
+  const { selectedMenu, setSelectedMenu, setSubMenu } = MenuStore()
+
+  useEffect(() => {
+    switch (selectedMenu) {
+      case MenuItemsTextEnum.Products:
+        setSubMenu(MenuItemTitlesEnum.modules)
+        break
+      default:
+        setSubMenu(null)
+    }
+
+    return () => {
+      setSubMenu(null)
+    }
+  }, [selectedMenu])
+
+  const handleSelect = (item: NavBarTextsI) => {
+    if (!item.hasData) {
+      return
+    }
+    setSelectedMenu(selectedMenu === item.text ? null : item.text)
+  }
+
   return (
     <NavbarStyles>
       <ul>
-        {NavBarTexts.map((item) => (
+        {NavBarTexts.map((item, index) => (
           <NavBarText
-            selectedId={selectedMenu?.id || 0}
-            setSelected={
-              selectedMenu?.id === item.id
-                ? () => setSelectedMenu(null)
-                : () => setSelectedMenu(item)
-            }
-            key={item.id}
-            item={item}
+            selected={selectedMenu === item.text}
+            setSelected={() => handleSelect(item)}
+            key={index}
+            {...item}
           />
         ))}
         <li className="gmail-phone">

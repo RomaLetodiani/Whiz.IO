@@ -23,13 +23,13 @@ const Header = () => {
           </>
         )}
         {isTablet && (
-          <>
+          <span className="burgerContainer">
             <Burger
               open={open}
               onBurgerClick={() => setOpen((prev) => !prev)}
             />
             <MobileMenu open={open} />
-          </>
+          </span>
         )}
       </HeaderStyles>
     </HeaderWrapperStyles>

@@ -1,28 +1,29 @@
 import { MenuItemsTextEnum } from "../../../Menu/Utils/Menu.types"
 
 export interface NavBarTextsI {
-  id: number
   text: MenuItemsTextEnum
+  hasData: boolean
 }
+
 export const NavBarTexts: NavBarTextsI[] = [
   {
-    id: 1,
     text: MenuItemsTextEnum.Products,
+    hasData: true,
   },
   {
-    id: 3,
     text: MenuItemsTextEnum.Prices,
+    hasData: false,
   },
   {
-    id: 4,
     text: MenuItemsTextEnum.Services,
+    hasData: false,
   },
   {
-    id: 5,
     text: MenuItemsTextEnum.AboutUs,
+    hasData: false,
   },
   {
-    id: 6,
     text: MenuItemsTextEnum.Contact,
+    hasData: false,
   },
 ]

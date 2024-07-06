@@ -15,8 +15,9 @@ const HeaderStyles = styled.header`
   .logoContainer {
     padding-left: 20px;
   }
-  @media (max-width: 768px) {
-    padding: 20px;
+
+  .burgerContainer {
+    padding-right: 20px;
   }
 `
 
