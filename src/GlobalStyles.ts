@@ -104,6 +104,9 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       padding: 0;
       font-family: 'mkhedruliRegular', sans-serif; /* Apply the custom font as a fallback */ 
+  }
+
+  body {
     color: #261D44;
   }
 

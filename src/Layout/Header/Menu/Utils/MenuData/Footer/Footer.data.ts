@@ -1,18 +1,25 @@
+import {
+  changelog,
+  FAreference,
+  support,
+  zap,
+} from "../../../../../../Components/Shared/MenuIcons"
+
 export const menuDataFooter = [
   {
-    icon: "icon",
+    icon: changelog,
     title: "Changelog",
   },
   {
-    icon: "icon",
-    title: "საფორთი",
-  },
-  {
-    icon: "icon",
+    icon: FAreference,
     title: "Full API reference",
   },
   {
-    icon: "API სტატუსი",
-    title: "სახელი",
+    icon: support,
+    title: "საფორთი",
+  },
+  {
+    icon: zap,
+    title: "API სტატუსი",
   },
 ]

@@ -1,13 +1,19 @@
 import MenuStore from "../../../Stores/Menu.Store"
+import MenuFooter from "./Layout/MenuFooter/MenuFooter"
+import MenuHeader from "./Layout/MenuHeader/MenuHeader"
+import MenuMain from "./Layout/MenuMain/MenuMain"
 import { MenuStyles } from "./Menu.styled"
-import { MenuData } from "./Utils/Menu.data"
 
 const Menu = () => {
   const { selectedMenu, subMenu } = MenuStore()
   return (
     selectedMenu &&
     subMenu && (
-      <MenuStyles>{MenuData[selectedMenu][subMenu][0].title}</MenuStyles>
+      <MenuStyles>
+        <MenuHeader />
+        <MenuMain selectedMenu={selectedMenu} subMenu={subMenu} />
+        <MenuFooter />
+      </MenuStyles>
     )
   )
 }
