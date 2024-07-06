@@ -2,15 +2,21 @@ import { phone } from "../../../Components/Shared/icons"
 import { NavBarTexts } from "./NavBarText/Utils/NavBarTexts"
 import NavBarText from "./NavBarText/NavBarText"
 import { NavbarStyles } from "./Navbar.styled"
+import MenuStore from "../../../Stores/Menu.Store"
 
 const Navbar = () => {
+  const { selectedMenu, setSelectedMenu } = MenuStore()
   return (
     <NavbarStyles>
       <ul>
         {NavBarTexts.map((item) => (
           <NavBarText
-            selectedId={0}
-            setSelected={() => {}}
+            selectedId={selectedMenu?.id || 0}
+            setSelected={
+              selectedMenu?.id === item.id
+                ? () => setSelectedMenu(null)
+                : () => setSelectedMenu(item)
+            }
             key={item.id}
             item={item}
           />

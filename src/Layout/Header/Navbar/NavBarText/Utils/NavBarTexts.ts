@@ -1,4 +1,4 @@
-export enum MenuItems {
+export enum MenuItemsTextEnum {
   Products = "პროდუქტები",
   Prices = "ფასები",
   Services = "სერვისები",
@@ -6,25 +6,29 @@ export enum MenuItems {
   Contact = "კონტაქტი",
 }
 
-export const NavBarTexts = [
+export interface NavBarTextsI {
+  id: number
+  text: MenuItemsTextEnum
+}
+export const NavBarTexts: NavBarTextsI[] = [
   {
     id: 1,
-    text: MenuItems.Products,
+    text: MenuItemsTextEnum.Products,
   },
   {
     id: 3,
-    text: MenuItems.Prices,
+    text: MenuItemsTextEnum.Prices,
   },
   {
     id: 4,
-    text: MenuItems.Services,
+    text: MenuItemsTextEnum.Services,
   },
   {
     id: 5,
-    text: MenuItems.AboutUs,
+    text: MenuItemsTextEnum.AboutUs,
   },
   {
     id: 6,
-    text: MenuItems.Contact,
+    text: MenuItemsTextEnum.Contact,
   },
 ]

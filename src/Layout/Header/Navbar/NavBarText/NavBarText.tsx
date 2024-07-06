@@ -1,11 +1,9 @@
 import { dropDown } from "../../../../Components/Shared/icons"
 import { NavBarTextStyles } from "./NavBarText.styled"
+import { NavBarTextsI } from "./Utils/NavBarTexts"
 
 type NavBarTextProps = {
-  item: {
-    id: number
-    text: string
-  }
+  item: NavBarTextsI
   selectedId: number
   setSelected: (id: number) => void
 }

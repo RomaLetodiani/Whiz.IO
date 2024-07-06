@@ -1,14 +1,14 @@
 import { create } from "zustand"
-import { MenuItems } from "../Layout/Header/Navbar/NavBarText/Utils/NavBarTexts"
+import { NavBarTextsI } from "../Layout/Header/Navbar/NavBarText/Utils/NavBarTexts"
 
-interface muneStoreI {
-  selectedMenu: MenuItems | null
-  setSelectedMenu: (menu: MenuItems) => void
+interface menuStoreI {
+  selectedMenu: NavBarTextsI | null
+  setSelectedMenu: (menu: NavBarTextsI | null) => void
 }
 
-const authStore = create<muneStoreI>()((set) => ({
+const MenuStore = create<menuStoreI>()((set) => ({
   selectedMenu: null,
   setSelectedMenu: (menu) => set({ selectedMenu: menu }),
 }))
 
-export default authStore
+export default MenuStore
