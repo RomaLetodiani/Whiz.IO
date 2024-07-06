@@ -1,3 +1,4 @@
+// Modules
 import livePanel from "../../Assets/Icons/Menu/Modules/livepanel.png"
 import requests from "../../Assets/Icons/Menu/Modules/Requests.png"
 import tasks from "../../Assets/Icons/Menu/Modules/tasks.png"
@@ -14,7 +15,19 @@ import autoDialer from "../../Assets/Icons/Menu/Modules/autoDialer.png"
 import autoInformer from "../../Assets/Icons/Menu/Modules/autoInformer.png"
 import API from "../../Assets/Icons/Menu/Modules/API.png"
 
+// Decisions
+import callCenter from "../../Assets/Icons/Menu/Decisions/callCenter.png"
+import contactCenter from "../../Assets/Icons/Menu/Decisions/contactCenter.png"
+import sales from "../../Assets/Icons/Menu/Decisions/sales.png"
+
+// footer
+import changelog from "../../Assets/Icons/Menu/footer/Changelog.png"
+import support from "../../Assets/Icons/Menu/footer/support.png"
+import FAreference from "../../Assets/Icons/Menu/footer/FAreference.png"
+import zap from "../../Assets/Icons/Menu/footer/zap.png"
+
 export {
+  // Modules
   livePanel,
   requests,
   tasks,
@@ -30,4 +43,15 @@ export {
   autoDialer,
   autoInformer,
   API,
+
+  // Decisions
+  callCenter,
+  contactCenter,
+  sales,
+
+  // Footer
+  changelog,
+  support,
+  FAreference,
+  zap,
 }
