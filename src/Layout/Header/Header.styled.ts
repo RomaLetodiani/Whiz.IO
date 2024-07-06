@@ -7,6 +7,7 @@ const HeaderStyles = styled.header`
   padding: 32px 20px;
   height: 100px;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
   @media (max-width: 768px) {
@@ -28,6 +29,7 @@ const HeaderWrapperStyles = styled.div`
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `
 
 export { HeaderStyles, HeaderWrapperStyles }

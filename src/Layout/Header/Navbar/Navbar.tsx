@@ -1,4 +1,3 @@
-import Popover from "../../../Components/Popover/Popover"
 import { phone } from "../../../Components/Shared/icons"
 import { NavBarTexts } from "./NavBarText/Utils/NavBarTexts"
 import NavBarText from "./NavBarText/NavBarText"
@@ -31,11 +30,9 @@ const Navbar = () => {
             {full && <p>info@whizio.ge</p>}
           </span> */}
           <span>
-            <Popover position="bottom" content={<p>+995 322 551 441</p>}>
-              <a href="tel:+995322551441">
-                <img src={phone} alt="Phone Icon" />
-              </a>
-            </Popover>
+            <a href="tel:+995322551441">
+              <img src={phone} alt="Phone Icon" />
+            </a>
 
             <a href="tel:+995322551441">
               <p>+995 322 551 441</p>

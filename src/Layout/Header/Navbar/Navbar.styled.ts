@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const NavbarStyles = styled.nav`
   ul {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     li {
       list-style: none;
       font-weight: 600;
@@ -18,6 +18,9 @@ export const NavbarStyles = styled.nav`
           display: flex;
           align-items: center;
           gap: 4px;
+        }
+        p {
+          white-space: nowrap;
         }
       }
     }

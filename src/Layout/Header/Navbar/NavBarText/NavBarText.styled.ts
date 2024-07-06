@@ -4,7 +4,6 @@ export const NavBarTextStyles = styled.li<{ selected: boolean }>`
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0 20px;
   cursor: pointer;
   transition: 0.3s;
   color: ${(props) => (props.selected ? "var(--primary)" : "var(--black)")};
@@ -12,7 +11,6 @@ export const NavBarTextStyles = styled.li<{ selected: boolean }>`
   &:hover {
     color: var(--primary);
   }
-
   img {
     margin-left: 5px;
     transition: 0.3s;
