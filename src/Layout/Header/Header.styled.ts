@@ -5,20 +5,12 @@ const HeaderStyles = styled.header`
   position: relative;
   max-width: 1440px;
   margin-inline: auto;
-  padding-block: 32px;
+  padding: 32px 20px;
   height: 100px;
   display: flex;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-
-  .logoContainer {
-    padding-left: 20px;
-  }
-
-  .burgerContainer {
-    padding-right: 20px;
-  }
 `
 
 const HeaderWrapperStyles = styled.div`
