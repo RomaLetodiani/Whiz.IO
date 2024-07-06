@@ -5,6 +5,7 @@ import useMediaQuery from "../../Hooks/useMediaQuery"
 import { HeaderStyles, HeaderWrapperStyles } from "./Header.styled"
 import Navbar from "./Navbar/Navbar"
 import MobileMenu from "./Navbar/Mobile/MobileMenu"
+import Menu from "./Menu/Menu"
 
 const Header = () => {
   const isTablet = useMediaQuery("(max-width: 1000px)")
@@ -12,8 +13,15 @@ const Header = () => {
   return (
     <HeaderWrapperStyles>
       <HeaderStyles>
-        <Logo />
-        {!isTablet && <Navbar />}
+        <span className="logoContainer">
+          <Logo />
+        </span>
+        {!isTablet && (
+          <>
+            <Navbar />
+            <Menu />
+          </>
+        )}
         {isTablet && (
           <>
             <Burger

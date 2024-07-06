@@ -2,14 +2,19 @@ import styled from "styled-components"
 import gradient from "../../Assets/Images/Home/heroGradient.png"
 
 const HeaderStyles = styled.header`
+  position: relative;
   max-width: 1440px;
   margin-inline: auto;
-  padding: 32px 20px;
+  padding-block: 32px;
   height: 100px;
   display: flex;
   gap: 20px;
   justify-content: space-between;
   align-items: center;
+
+  .logoContainer {
+    padding-left: 20px;
+  }
   @media (max-width: 768px) {
     padding: 20px;
   }

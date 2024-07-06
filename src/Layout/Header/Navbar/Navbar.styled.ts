@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const NavbarStyles = styled.nav`
+  padding-right: 20px;
   ul {
     display: flex;
     gap: 10px;
