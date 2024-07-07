@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Burger from "../../Components/Burger/Burger"
 import Logo from "../../Components/Shared/Logo"
 import useMediaQuery from "../../Hooks/useMediaQuery"
@@ -10,6 +10,14 @@ import Menu from "./Menu/Menu"
 const Header = () => {
   const isTablet = useMediaQuery("(max-width: 1000px)")
   const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    if (!isTablet) {
+      setOpen(false)
+    } else {
+      document.body.style.overflow = open ? "hidden" : "auto"
+    }
+  }, [isTablet, open])
   return (
     <HeaderWrapperStyles>
       <HeaderStyles>
