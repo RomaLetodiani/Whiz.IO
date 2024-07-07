@@ -20,7 +20,6 @@ const HeaderWrapperStyles = styled.div`
   left: 0;
   transition: all 0.3s ease-in-out;
   width: 100%;
-  border: "1px solid #e5e5e5";
   border-bottom: 1px solid #e5e5e5;
   background-image: url(${heroGradient});
   background-color: #fff;

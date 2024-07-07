@@ -26,7 +26,7 @@ const Header = () => {
               open={open}
               onBurgerClick={() => setOpen((prev) => !prev)}
             />
-            <MobileMenu open={open} />
+            <MobileMenu open={open} setOpen={setOpen} />
           </>
         )}
       </HeaderStyles>

@@ -1,17 +1,18 @@
 import styled from "styled-components"
 
 export const NavBarTextStyles = styled.li<{ selected: boolean }>`
-  position: relative;
   display: flex;
   align-items: center;
   font-weight: 600;
-  font-size: clamp(12px, 1.5vw, 16px);
+  font-size: 16px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
+  line-height: 24px;
 
   transition: 0.3s;
-  color: ${(props) => (props.selected ? "var(--primary)" : "var(--black)")};
+
+  span {
+    color: ${(props) => props.selected && "#7F56D9"};
+  }
 
   &:hover {
     color: var(--primary);

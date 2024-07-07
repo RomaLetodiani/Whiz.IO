@@ -14,6 +14,11 @@ export const MenuStyles = styled.div`
   background-position: left;
   background-repeat: no-repeat;
 
+  /* height */
+  max-height: 730px;
+  height: calc(100vh - 200px);
+  overflow: auto;
+
   /* Shadow/lg */
   box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
     0px 4px 6px -2px rgba(16, 24, 40, 0.03);
