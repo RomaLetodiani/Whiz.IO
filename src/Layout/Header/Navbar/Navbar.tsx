@@ -19,6 +19,7 @@ const Navbar = () => {
     }
 
     return () => {
+      setSelectedMenu(null)
       setSubMenu(null)
     }
   }, [selectedMenu])
