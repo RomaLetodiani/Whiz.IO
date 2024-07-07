@@ -4,7 +4,12 @@ export const NavBarTextStyles = styled.li<{ selected: boolean }>`
   position: relative;
   display: flex;
   align-items: center;
+  font-weight: 600;
+  font-size: clamp(12px, 1.5vw, 16px);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+
   transition: 0.3s;
   color: ${(props) => (props.selected ? "var(--primary)" : "var(--black)")};
 

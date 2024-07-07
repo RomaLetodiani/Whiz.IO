@@ -4,25 +4,16 @@ import NavBarText from "./NavBarText/NavBarText"
 import { NavbarStyles } from "./Navbar.styled"
 import MenuStore from "../../../Stores/Menu.Store"
 import { useEffect } from "react"
-import { MenuItemsTextEnum, MenuItemTitlesEnum } from "../Menu/Utils/Menu.types"
 
 const Navbar = () => {
   const { selectedMenu, setSelectedMenu, setSubMenu } = MenuStore()
 
   useEffect(() => {
-    switch (selectedMenu) {
-      case MenuItemsTextEnum.Products:
-        setSubMenu(MenuItemTitlesEnum.modules)
-        break
-      default:
-        setSubMenu(null)
-    }
-
     return () => {
       setSelectedMenu(null)
       setSubMenu(null)
     }
-  }, [selectedMenu])
+  }, [])
 
   const handleSelect = (item: NavBarTextsI) => {
     if (!item.hasData) {
@@ -42,7 +33,9 @@ const Navbar = () => {
             {...item}
           />
         ))}
-        <li className="gmail-phone">
+      </ul>
+      <div className="navBarActions">
+        <div className="gmail-phone">
           {/* TODO: Add Gmail when needed */}
           {/* <span>
             <Popover
@@ -65,12 +58,12 @@ const Navbar = () => {
               <p>+995 322 551 441</p>
             </a>
           </span>
-        </li>
+        </div>
 
-        <li>
+        <div>
           <span>ქარ</span>
-        </li>
-      </ul>
+        </div>
+      </div>
     </NavbarStyles>
   )
 }

@@ -14,7 +14,17 @@ interface menuStoreI {
 
 const MenuStore = create<menuStoreI>()((set) => ({
   selectedMenu: null,
-  setSelectedMenu: (menu) => set({ selectedMenu: menu }),
+  setSelectedMenu: (menu) => {
+    switch (menu) {
+      case MenuItemsTextEnum.Products:
+        set({ subMenu: MenuItemTitlesEnum.modules })
+        break
+      default:
+        set({ subMenu: null })
+    }
+
+    set({ selectedMenu: menu })
+  },
 
   subMenu: null,
   setSubMenu: (menu) => set({ subMenu: menu }),
