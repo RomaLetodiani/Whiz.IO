@@ -15,6 +15,11 @@ export const NavbarStyles = styled.nav`
     align-items: center;
     gap: 20px;
 
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 24px;
+
     .gmail-phone {
       gap: 10px;
       span {

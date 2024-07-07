@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const MenuMainStyles = styled.div`
   display: flex;
   gap: 48px;
+  flex: 1;
 
   /* Mobile Menu */
   @media screen and (max-width: 1000px) {
@@ -46,9 +47,16 @@ export const MenuItemsWrapper = styled.div`
   gap: 0 48px;
 
   /* Large Screen */
-  @media screen and (min-width: 1000px) {
+  @media screen and (max-height: 850px) and (min-width: 1000px) {
     max-height: 460px;
+    min-height: 100px;
+    height: calc(100vh - 400px);
     overflow: auto;
+
+    border-radius: 12px;
+    /* Inner Shadow */
+    box-shadow: inset 0px 4px 4px rgba(16, 24, 40, 0.08),
+      inset -4px -4px 4px rgba(16, 24, 40, 0.08);
   }
 
   /* Mobile Menu */
