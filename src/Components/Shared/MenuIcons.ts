@@ -20,6 +20,20 @@ import callCenter from "../../Assets/Icons/Menu/Decisions/callCenter.png"
 import contactCenter from "../../Assets/Icons/Menu/Decisions/contactCenter.png"
 import sales from "../../Assets/Icons/Menu/Decisions/sales.png"
 
+// Sectors
+import energy from "../../Assets/Icons/Menu/Sectors/energy.png"
+import banks from "../../Assets/Icons/Menu/Sectors/banks.png"
+import retail from "../../Assets/Icons/Menu/Sectors/retail.png"
+import insurance from "../../Assets/Icons/Menu/Sectors/insurance.png"
+import autoImport from "../../Assets/Icons/Menu/Sectors/autoimport.png"
+import associations from "../../Assets/Icons/Menu/Sectors/asociacion.png"
+import health from "../../Assets/Icons/Menu/Sectors/health.png"
+import education from "../../Assets/Icons/Menu/Sectors/education.png"
+import userSupport from "../../Assets/Icons/Menu/Sectors/userSupport.png"
+import rightsGuard from "../../Assets/Icons/Menu/Sectors/rightsGuard.png"
+import autoInformator from "../../Assets/Icons/Menu/Sectors/autoInformator.png"
+import APIintegration from "../../Assets/Icons/Menu/Sectors/API.png"
+
 // footer
 import changelog from "../../Assets/Icons/Menu/footer/Changelog.png"
 import support from "../../Assets/Icons/Menu/footer/support.png"
@@ -48,6 +62,20 @@ export {
   callCenter,
   contactCenter,
   sales,
+
+  // Sectors
+  energy,
+  banks,
+  retail,
+  insurance,
+  autoImport,
+  associations,
+  health,
+  education,
+  userSupport,
+  rightsGuard,
+  autoInformator,
+  APIintegration,
 
   // Footer
   changelog,
