@@ -17,3 +17,18 @@ export const MenuData: menuDataI = {
   [MenuItemsTextEnum.AboutUs]: initial,
   [MenuItemsTextEnum.Contact]: initial,
 }
+
+export const ProductsSubMenuData = [
+  {
+    title: MenuItemTitlesEnum.communicationChannels,
+  },
+  {
+    title: MenuItemTitlesEnum.modules,
+  },
+  {
+    title: MenuItemTitlesEnum.decisions,
+  },
+  {
+    title: MenuItemTitlesEnum.sectors,
+  },
+]

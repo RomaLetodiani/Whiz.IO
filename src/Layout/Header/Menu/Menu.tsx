@@ -5,13 +5,17 @@ import MenuMain from "./Layout/MenuMain/MenuMain"
 import { MenuStyles } from "./Menu.styled"
 
 const Menu = () => {
-  const { selectedMenu, subMenu } = MenuStore()
+  const { selectedMenu, subMenu, setSubMenu } = MenuStore()
   return (
     selectedMenu &&
     subMenu && (
       <MenuStyles>
         <MenuHeader />
-        <MenuMain selectedMenu={selectedMenu} subMenu={subMenu} />
+        <MenuMain
+          selectedMenu={selectedMenu}
+          subMenu={subMenu}
+          setSubMenu={setSubMenu}
+        />
         <MenuFooter />
       </MenuStyles>
     )
